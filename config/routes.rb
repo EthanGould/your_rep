@@ -1,4 +1,5 @@
 TweetYourRep::Application.routes.draw do
+  root to: "representatives#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

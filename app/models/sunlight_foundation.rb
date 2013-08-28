@@ -1,10 +1,3 @@
-require 'rubygems'
-require 'bundler/setup'
-require 'httparty'
-require 'dotenv'
-
-Dotenv.load
-
 class Sunlight_Foundation
   include HTTParty
 
@@ -15,8 +8,4 @@ class Sunlight_Foundation
     HTTParty.get(api_url)
   end
 
-end
-
-Sunlight_Foundation.response["results"].each do |rep|
-  puts rep["twitter_id"]
 end

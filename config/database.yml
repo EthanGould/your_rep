@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: tweet_your_rep_development
   pool: 5
-  username: tweet_your_rep
+  username:
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -43,13 +43,5 @@ test:
   encoding: unicode
   database: tweet_your_rep_test
   pool: 5
-  username: tweet_your_rep
-  password:
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: tweet_your_rep_production
-  pool: 5
-  username: tweet_your_rep
+  username:
   password:
